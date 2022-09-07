@@ -1,10 +1,4 @@
 import sys
-n=int(sys.stdin.readline())
-li=[]
-for _ in range(n):
-    li.append(int(sys.stdin.readline()))
-    
-li.sort()
-
-for x in range(n):
-    print(li[x])
+input = sys.stdin.readline
+nums = sorted([int(input()) for _ in range(int(input()))])
+print(*nums, sep='\n')
